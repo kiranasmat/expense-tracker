@@ -1,27 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.container{
+  max-width: 400px;
+  min-height: 450px;
+  margin: 0 auto;
+  background-color: #efefef;
+  box-shadow: 0 0 10px grey;
+  margin-top: 50px;
+  padding: 15px 50px;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.text-center{
+  text-align: center;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.expense-container{
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0 0 10px grey;
 }
+.transaction-form input{
+width: 100%;
+margin:10px 0 ;
+padding: 5px 5px;
+}
+.transaction-list{
+  margin: 0;
+  padding: 0;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+}
+.transaction-list>li{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px grey;
+  padding: 10px 15px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 10px;
 }
